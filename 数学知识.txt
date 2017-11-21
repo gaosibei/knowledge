@@ -1,7 +1,45 @@
 数学知识：
  1 判断三角形是锐角，直角还是钝角：
+<<<<<<< HEAD
 		a*a + b*b < c*c : 钝角三角形； 
 		a*a + b*b = c*c : 直角三角形
 		a*a + b*b > c*c ：锐角三角形
  2 如果是锐角三角形，垂足在三角形内; 若是钝角三角形，则垂足在延长线上
  3 
+=======
+        a*a + b*b < c*c : 钝角三角形； 
+		a*a + b*b = c*c : 直角三角形
+		a*a + b*b > c*c ：锐角三角形
+ 2	如果是锐角三角形，垂足在三角形内; 若是钝角三角形，则垂足在延长线上
+
+ 3  
+
+ 书籍：
+ 1 车辆导航定位方法及应用
+ 2 车辆组合定位与导航系统
+ 
+ 
+ GetSameNodeInfo
+ GetSameNodeList
+ GetConnectSentryList：获取某个输入点，所有连接的link
+ 
+ struct LEE_PointInfo
+{
+    LEE_RealPos            Position;
+    LEE_Link               Link;
+    WORD                   NodeNo;
+    WORD                   ShapeNo;
+    LEE_IncPointInfo       IncInfo;
+    LEE_ParkInfo           ParkInfo;
+};
+
+typedef LocationVector<LEE_PointInfo>::type LEE_PointInfoSum;
+static const WORD SAME_NODE_MAX_COUNT = 10;
+    
+LocEngine::MapMatching()
+   1 LEE_Match.ConUpdate()
+   2 LEE_Match.MapMatching()
+ 
+
+
+
